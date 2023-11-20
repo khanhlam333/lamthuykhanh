@@ -96,6 +96,12 @@ img {
     border-top: solid 1px white;
     border-bottom: solid 1px white;
 }
+
+/*about me section*/
+#profile-image {
+    width: 15%;
+    display: block;
+}
   
 #skills-main>div>div, #skills-main>div>div>ul>li {
     color: black;
@@ -229,6 +235,7 @@ img {
     justify-content: center;
     width: 30%;
     align-items: center;
+    margin-top: 2rem;
 }
   
 /* LAPTOP/IPAD SCREEN */
