@@ -1,0 +1,357 @@
+body, p, div, ul, li, a {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    color: black;
+    list-style-type: none;
+    font-size: 1.1rem;
+}
+  
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+  
+img {
+    max-width: 100%;
+}
+  
+/* BANNER IMAGE */
+/*.banner-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}*/
+  
+.banner-img {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    display: block;
+}
+  
+/*.banner-name-tag {
+    width: 30%;
+    object-fit: contain;
+    display: block;
+    position: absolute;
+}*/
+  
+  
+/* MENU */
+.menu {
+    display: none;
+    width: 100%;
+    border-bottom: solid 2px #1a1a1a;
+    z-index: 9000;
+}
+.menu-container {
+    display: flex;
+    background-color: white;
+    color: black;
+    padding: 1.5rem;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.2rem;
+}
+.menu-container>a:hover {
+    text-shadow: 1px 0px 0px black;
+}
+  
+/* language toggle switch */
+#language-container {
+    display: flex;
+}
+#language-container>a {
+    width: 50%;
+    text-align: center;
+    padding: 0.2rem;
+    border: solid 2px #0f0e0a;
+}
+  
+.chosen {
+    color: white;
+    background-color: #0f0e0a;
+    font-weight: bold;
+}
+  
+.not-chosen {
+    color: #0f0e0a;
+    background-color: white;
+}
+  
+/* SECTIONS */
+.main-container-black {
+    display: flex;
+    justify-content: space-between;
+}
+  
+.main-container-white {
+    display: flex;
+    justify-content: space-between;
+    background-color: #1a1a1a;
+    border-top: solid 1px white;
+    border-bottom: solid 1px white;
+}
+  
+#skills-main>div>div, #skills-main>div>div>ul>li {
+    color: black;
+} 
+  
+/* first part section template*/
+.section-title {
+    background-color: black;
+    width: 15%;
+    padding: 1.5rem;
+}
+  
+.white-label {
+    background-color: white;
+    border: solid 1px #0f0e0a;
+    outline: solid 4px white;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.white-label>span {
+    font-size: 1.5rem;
+    font-family: 'Fraunces', serif;
+    font-weight: 200;
+}
+  
+/*brands images*/
+.brands-img {
+    width: 13%;
+    vertical-align: middle;
+    margin-right: 0.5rem;
+}
+#tableau {
+    width: 22%;
+}
+
+/*skills links*/
+#tools, #skills, #languages {
+    width: 32%;
+    padding-left: 5rem;
+}
+
+
+#link-examples {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 70%;
+}
+  
+#link-examples>a {
+    background-color: #1a1a1a;
+    color: white;
+    padding: 0.7rem;
+    margin: 0.7rem 0;
+    border-radius: 10px;
+    box-shadow: 0 5px #999;
+}
+  
+#link-examples>a:hover {
+    background-color: black;
+    text-shadow: 1px 0px 0px white;
+}
+  
+#link-examples>a:active {
+    background-color: black;
+    text-shadow: 1px 0px 0px white;
+    box-shadow: 0 1px #666;
+    transform: translateY(4px);
+}
+  
+.fa-solid {
+    font-size: 0.8rem;
+}
+  
+  
+/* container template */ 
+.container {
+    display: flex;
+    justify-content: space-around;
+    width: 85%;
+    padding: 1rem 0 2rem;
+}
+  
+  
+/*projects section*/
+.projects-description {
+    margin-top: 2rem;
+    width: 17%;
+}
+.projects-description>ul {
+    margin-top: 1.5rem;
+}
+.projects-description>ul>li {
+    list-style-type: square;
+    color: white;
+}
+  
+.projects-description>a {
+    background-color: white;
+    color: black;
+    padding: 0.7rem 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 5px #999;
+}
+  
+.projects-description>a:hover {
+    background-color: white;
+    text-shadow: 1px 0px 0px black;
+}
+  
+.projects-description>a:active {
+    background-color: white;
+    text-shadow: 1px 0px 0px black;
+    box-shadow: 0 1px #666;
+    transform: translateY(4px);
+}
+
+/*contact section*/
+.contact-img {
+    display: block;
+    margin: 0 auto 1rem;
+    width: 10%;
+}
+
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 30%;
+    align-items: center;
+}
+  
+/* LAPTOP/IPAD SCREEN */
+@media only screen and (max-width: 1024px) {
+    .main-container-black {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+  
+   .main-container-white {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      border-top: solid 1px black;
+      border-bottom: solid 1px black;
+   }
+    
+    .section-title {
+      padding: 1rem;
+      width: 100%;
+    }
+    .white-label {
+      padding: 1rem;
+    }
+    .white-label>span {
+      font-size: 1.7rem;
+    }
+    .container {
+      width: 100%;
+    }
+
+    #tools, #skills, #languages {
+        width: 90%;
+        padding-left: 5rem;
+    }
+
+    .brands-img {
+        width: 20%;
+    }
+    #tableau {
+        width: 27%;
+    }
+
+    .projects-description {
+        width: 30%;
+        margin-left: 2rem;
+    }
+
+    .contact-img {
+        width: 10%;
+    }
+    
+    .contact-container {
+        width: 80%;
+        margin-top: 1.5rem;
+    }
+}
+  
+/*PHONE SCREEN*/
+@media only screen and (max-width: 645px) {
+    .menu-container {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+    
+    .main-container-black {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+  
+    .main-container-white {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      border-top: solid 1px black;
+      border-bottom: solid 1px black;
+   }
+    
+    .section-title {
+      padding: 1rem;
+      width: 100%;
+    }
+    .white-label {
+      padding: 0.7rem 1rem;
+    }
+    .white-label>span {
+      font-size: 1.6rem;
+    }
+    .container {
+      width: 100%;
+      flex-direction: column;
+      padding: 0 2rem 2rem;
+    }
+    
+    #link-examples {
+      width: 70%;
+      margin: auto;
+    }
+    #tools>ul, #languages>ul {
+      width: 70%;
+      margin: auto;
+    }
+    
+    .projects-description {
+      margin: 2rem auto 0;
+      width: 80%;
+    }
+    
+    .projects-description>a {
+      display: block;
+      width: 70%;
+      margin: 0 auto;
+    }
+
+    .contact-img {
+        width: 10%;
+    }
+    
+    .contact-container {
+        flex-direction: row;
+        width: 80%;
+        margin-top: 1.5rem;
+    }
+}
